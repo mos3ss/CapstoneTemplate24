@@ -114,7 +114,7 @@ def callback():
     # The user authenticated with Google, authorized our
     # app, and now we've verified their email through Google!
     if userinfo_response.json().get("email_verified"):
-        gid = userinfo_response.json().get("sub,"")
+        gid = userinfo_response.json().get("sub","")
         gmail = userinfo_response.json().get("email","")
         gprofile_pic = userinfo_response.json().get("picture","")
         gname = userinfo_response.json().get("name","")
